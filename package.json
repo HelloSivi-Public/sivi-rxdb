@@ -1,7 +1,7 @@
 {
-  "name": "rxdb",
+  "name": "@hellosivi/sivi-rxdb",
   "description": "A realtime Database for JavaScript applications",
-  "version": "12.7.15",
+  "version": "12.7.16-beta.1",
   "author": "pubkey",
   "repository": {
     "type": "git",
