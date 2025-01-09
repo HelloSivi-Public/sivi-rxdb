@@ -1,7 +1,7 @@
 {
   "name": "@hellosivi/sivi-rxdb",
   "description": "A realtime Database for JavaScript applications.",
-  "version": "12.7.16-beta.1",
+  "version": "12.7.16-beta.2",
   "author": "pubkey",
   "repository": {
     "type": "git",
@@ -27,9 +27,6 @@
     "realtime"
   ],
   "license": "Apache-2.0",
-  "main": "./dist/lib/index.js",
-  "jsnext:main": "./dist/es/index.js",
-  "module": "./dist/es/index.js",
   "types": "./dist/types/index.d.ts",
   "sideEffects": false,
   "scripts": {
@@ -269,5 +266,39 @@
     "webpack": "5.70.0",
     "webpack-bundle-analyzer": "4.5.0",
     "webpack-cli": "4.9.2"
+  },
+  "exports": {
+        ".": {
+            "import": "./dist/es/index.js",
+            "require": "./dist/lib/index.js"
+        },
+        "./plugins/key-compression": {
+            "import": "./dist/es/plugins/key-compression.js",
+            "require": "./dist/lib/plugins/key-compression.js"
+        },
+        "./plugins/query-builder": {
+          "import": "./dist/es/plugins/query-builder/index.js",
+          "require": "./dist/lib/plugins/query-builder/index.js"
+        },
+        "./plugins/encryption": {
+          "import": "./dist/es/plugins/encryption.js",
+          "require": "./dist/lib/plugins/encryption.js"
+        },
+        "./plugins/migration": {
+          "import": "./dist/es/plugins/migration/index.js",
+          "require": "./dist/lib/plugins/migration/index.js"
+        },
+        "./plugins/attachments": {
+          "import": "./dist/es/plugins/attachments.js",
+          "require": "./dist/lib/plugins/attachments.js"
+        },
+        "./plugins/dev-mode": {
+          "import": "./dist/es/plugins/dev-mode/index.js",
+          "require": "./dist/lib/plugins/dev-mode/index.js"
+        },
+        "./plugins/pouchdb": {
+          "import": "./dist/es/plugins/pouchdb/index.js",
+          "require": "./dist/lib/plugins/pouchdb/index.js"
+        }
   }
 }
