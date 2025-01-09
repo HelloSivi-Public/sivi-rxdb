@@ -1,7 +1,7 @@
 {
   "name": "@hellosivi/sivi-rxdb",
   "description": "A realtime Database for JavaScript applications.",
-  "version": "12.7.16-beta.3",
+  "version": "12.7.16-beta.4",
   "author": "pubkey",
   "repository": {
     "type": "git",
@@ -304,11 +304,11 @@
           "import": "./dist/es/plugins/local-documents/index.js",
           "require": "./dist/lib/plugins/local-documents/index.js"
         },
-        "./plugins/cleanup": {
+        "./plugins/validate": {
           "import": "./dist/es/plugins/validate.js",
           "require": "./dist/lib/plugins/validate.js"
         },
-        "./plugins/validate": {
+        "./plugins/cleanup": {
           "import": "./dist/es/plugins/cleanup/index.js",
           "require": "./dist/lib/plugins/cleanup/index.js"
         },
